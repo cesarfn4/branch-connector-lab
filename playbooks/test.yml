@@ -14,5 +14,5 @@
 
     - name: Get janus version
       ansible.builtin.debug:
-        msg: "{{ ansible_facts.packages['janus'][0].version }} versions of janus are installed!"
+        msg: "{{ ansible_facts.packages['janus'][0].version }} version of janus is installed!"
       when: "'janus' in ansible_facts.packages"
